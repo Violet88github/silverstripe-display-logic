@@ -16,12 +16,11 @@
     "require":
     {
         "php": "^8.1",
-        "silverstripe/framework": "^5.0"
+        "silverstripe/framework": "^6.0"
     },
     "require-dev": {
-        "silverstripe/recipe-testing": "^3",
-        "silverstripe/behat-extension": "^5",
-        "silverstripe/serve": "^3"
+        "silverstripe/recipe-testing": "4.x-dev",
+        "silverstripe/behat-extension": "6.x-dev"
     },
     "extra": {
         "installer-name": "display-logic",
@@ -34,6 +33,15 @@
             "UncleCheese\\DisplayLogic\\": "src/",
             "UncleCheese\\DisplayLogic\\Tests\\": "tests/php/",
             "UncleCheese\\DisplayLogic\\Tests\\Behaviour\\": "tests/behat/src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/installers": false,
+            "silverstripe/recipe-plugin": true,
+            "silverstripe/vendor-plugin": true
         }
     }
 }
