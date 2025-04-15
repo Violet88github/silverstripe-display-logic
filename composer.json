@@ -1,5 +1,5 @@
 {
-    "name": "unclecheese/display-logic",
+    "name": "violet88/display-logic",
     "replace": {
         "silverstripe/display-logic": "*"
     },
@@ -11,6 +11,10 @@
     {
         "name": "Uncle Cheese",
         "email": "unclecheese@leftandmain.com"
+    },
+    {
+        "name": "Violet88",
+        "email": "info@violet88.nl"
     }
     ],
     "require":
@@ -30,18 +34,11 @@
     },
     "autoload": {
         "psr-4": {
-            "UncleCheese\\DisplayLogic\\": "src/",
-            "UncleCheese\\DisplayLogic\\Tests\\": "tests/php/",
-            "UncleCheese\\DisplayLogic\\Tests\\Behaviour\\": "tests/behat/src/"
+            "Violet88\\DisplayLogic\\": "src/",
+            "Violet88\\DisplayLogic\\Tests\\": "tests/php/",
+            "Violet88\\DisplayLogic\\Tests\\Behaviour\\": "tests/behat/src/"
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "config": {
-        "allow-plugins": {
-            "composer/installers": false,
-            "silverstripe/recipe-plugin": true,
-            "silverstripe/vendor-plugin": true
-        }
-    }
+    "prefer-stable": true
 }
